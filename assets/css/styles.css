@@ -107,6 +107,19 @@ the website, in light theme
 */
 
 /* REUSABLE CSS CLASSES */
+.section {
+  padding-block: 6rem 4rem;
+}
+
+.button {
+  display: inline-flex;
+  background: var(--second-gradient);
+  color: var(--white-color);
+  padding: 1.25rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-semi-bold);
+  transition: background 0.3s;
+}
 
 /* LAYOUT */
 .container {
@@ -192,6 +205,22 @@ the website, in light theme
   align-items: center;
   column-gap: 3rem;
   padding-top: 6rem;
+}
+
+.home-title {
+  font-size: var(--big-font-size);
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.home-job {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.home-description {
+  font-size: var(--larger-font-size);
+  margin-block: 1.5rem 2rem;
 }
 
 .home-img-wrapper {
