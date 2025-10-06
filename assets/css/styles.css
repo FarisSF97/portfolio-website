@@ -115,6 +115,10 @@ the website, in light theme
   padding-inline: 1.25rem;
 }
 
+.grid {
+  display: grid;
+}
+
 /* HEADER & NAV */
 .header {
   background-color: transparent;
@@ -183,6 +187,9 @@ the website, in light theme
 /* Change background header */
 
 /* HOME */
+.home-container {
+  grid-template-columns: 1fr repeat(2, max-content);
+}
 
 /* ABOUT */
 
@@ -193,3 +200,10 @@ the website, in light theme
 /* RESUME */
 
 /* PORTFOLIO */
+
+/* CONTACT */
+
+/* FOOTER */
+
+/* BREAKPOINTS */
+/* For large devices */
