@@ -233,6 +233,9 @@ the website, in light theme
 
 .home-img-wrapper {
   width: 38rem;
+  background: var(--second-gradient);
+  border-radius: 51% 49% 77% 23% / 65% 50% 50% 35% ;
+  overflow: hidden;
 }
 
 /* ABOUT */
