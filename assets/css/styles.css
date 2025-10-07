@@ -121,6 +121,14 @@ the website, in light theme
   transition: background 0.3s;
 }
 
+.button:hover {
+  background: linear-gradient(
+    260deg,
+    var(--first-color) 0%,
+    var(--first-color-dark) 100%
+  );
+}
+
 /* LAYOUT */
 .container {
   max-width: 1320px;
