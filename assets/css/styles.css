@@ -238,6 +238,20 @@ the website, in light theme
   overflow: hidden;
 }
 
+.home-social {
+  row-gap: 1rem;
+}
+
+.home-social-link {
+  color: var(--title-color);
+  font-size: var(--larger-font-size);
+  transition: color 0.3s;
+}
+
+.home-social-link:hover {
+  color: var(--first-color);
+}
+
 /* ABOUT */
 
 /* SERVICES */
