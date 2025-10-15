@@ -564,27 +564,30 @@
           </div>
         </div>
 
-        <form class="contact-form grid">
+        <form class="contact-form grid" id="contact-form">
           <div class="contact-form-div">
             <label for="" class="contact-label">Name</label>
-            <input type="text" class="contact-input">
+            <input type="text" name="name" class="contact-input" id="contact-name">
           </div>
 
           <div class="contact-form-div">
             <label for="" class="contact-label">Email</label>
-            <input type="email" class="contact-input">
+            <input type="email" name="email" class="contact-input" id="contact-email">
           </div>
 
           <div class="contact-form-div">
             <label for="" class="contact-label">Message</label>
-            <textarea name="" class="contact-input contact-area"></textarea>
+            <textarea
+              name="message"
+              class="contact-input contact-area" id="contact-message">
+            </textarea>
           </div>
 
           <button type="submit" class="button contact-button">
             Send Message
           </button>
 
-          <p class="contact-message"></p>
+          <p class="contact-message" id="message"></p>
         </form>
       </div>
     </section>
@@ -606,6 +609,10 @@
   <script src="assets/js/mixitup.min.js"></script>
 
 <!-- EMAIL JS -->
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
 
 <!-- SCROLL REVEAL -->
 

@@ -54,5 +54,52 @@ function activeWork() {
 linkWork.forEach((a) => a.addEventListener('click', activeWork));
 
 // EMAIL JS
+const contactForm = document.getElementById('contact-form'),
+  contactName = document.getElementById('contact-name'),
+  contactEmail = document.getElementById('contact-email'),
+  contactMessage = document.getElementById('contact-message'),
+  message = document.getElementById('message');
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  if (
+    contactName.value === '' ||
+    contactEmail.value === '' ||
+    contactMessage.value === ''
+  ) {
+    message.textContent = 'Write all the input fields';
+
+    setTimeout(() => {
+      message.textContent = '';
+    }, 3000);
+  } else {
+    emailjs
+      .sendForm(
+        'service_3vbgxel',
+        'template_a70v22j',
+        '#contact-form',
+        'ITrB-jHkf7irYN4HI'
+      )
+      .then(
+        () => {
+          message.textContent = 'Message sent ✓';
+
+          setTimeout(() => {
+            message.textContent = '';
+          }, 3000);
+        },
+        (error) => {
+          alert('OOPS! SOMETHING WENT WRONG...', error);
+        }
+      );
+
+      contactName.value = '';
+      contactEmail.value = '';
+      contactMessage.value = '';
+    }
+};
+
+contactForm.addEventListener('submit', sendEmail);
 
 // SCROLL REVEAL ANIMATION
