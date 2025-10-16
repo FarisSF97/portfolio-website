@@ -53,6 +53,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 button,
 input,
@@ -210,6 +214,9 @@ the website, in light theme
 }
 
 /* Active Link */
+.active-link {
+  color: var(--first-color);
+}
 
 /* Change background header */
 .scroll-header {
