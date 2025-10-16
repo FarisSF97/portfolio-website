@@ -212,6 +212,10 @@ the website, in light theme
 /* Active Link */
 
 /* Change background header */
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 4px 4px hsla(var(--first-hue), 0%, 4%, 0.2);
+}
 
 /* HOME */
 .home-container {
